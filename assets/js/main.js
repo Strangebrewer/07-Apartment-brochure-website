@@ -10,7 +10,7 @@ $('.autoplay').slick({
 $.ajax({
   async: true,
   crossDomain: true,
-  url: "https://api.wunderground.com/api/628f83f5e25fe2dc/conditions/q/UT/Bountiful.json",
+  url: "http://api.wunderground.com/api/628f83f5e25fe2dc/conditions/q/UT/Bountiful.json",
   method: "GET"
 }).then(response => {
   var weather = response.current_observation;
