@@ -3,7 +3,9 @@ $('.autoplay').slick({
   dots: true,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 3500,
+  pauseOnHover: true,
+  pauseOnDotsHover: true,
   appendDots: $(".slider-frame")
 });
 
