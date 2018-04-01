@@ -6,7 +6,7 @@ $('.autoplay').slick({
   autoplaySpeed: 3500,
   pauseOnHover: true,
   pauseOnDotsHover: true,
-  appendDots: $(".slider-frame")
+  appendDots: $(".slider-wrapper")
 });
 
 function degreesToCardinal(deg) {
