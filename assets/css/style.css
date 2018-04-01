@@ -303,7 +303,7 @@ header {
 }
 
 .carousel {
-  border: 3px solid var(--mainColor);
+  border: 2px solid var(--mainColor);
   width: 800px;
   margin: auto;
   padding: 10px;
@@ -467,7 +467,7 @@ header {
   padding: 10px;
   border: 2px solid var(--mainColor);
   border-radius: 50%;
-  width: 60%;
+  width: 50%;
   margin: auto;
 }
 
