@@ -1,11 +1,19 @@
 :root {
-  --mainColor: #007c85;
+  /* --mainColor: #007c85;
   --mainText: #ececec;
   --hoverColor: #bdbdbd;
   --hoverBkgrd: #19b3b3;
   --altBackground: #00857e36;
   --btnBackground: #081f22;
   --btnHover: #0b4a52;
+  --hoverBorder: #000; */
+  --mainColor: #004585;
+  --mainText: #ececec;
+  --hoverColor: #bdbdbd;
+  --hoverBkgrd: #53a6f3;
+  --altBackground: #0059ac5d;
+  --btnBackground: #0a1b2b;
+  --btnHover: #0a3155;
   --hoverBorder: #000;
 }
 
@@ -73,9 +81,15 @@ header {
 
 .header-name {
   float: left;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2em;
-  padding: 20px 0;
+  font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+  font-size: 2.5em;
+  padding: 20px 0 15px 0;
+}
+
+.header-name img {
+  height: 35px;
+  vertical-align: middle;
+  padding: 0 0 5px 10px;
 }
 
 .header nav {
@@ -89,7 +103,13 @@ header {
 }
 
 .header-name a:hover {
-  color: var(--hoverColor);
+  text-shadow: 0 0 1px #000,
+  0 0 2px #000,
+  0 0 3px #000,
+  0 0 4px #fff,
+  0 0 5px #fff,
+  0 0 10px #fff;
+  /* color: var(--hoverColor); */
 }
 
 .main-nav a:hover {
@@ -114,7 +134,7 @@ header {
   background: none;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 0;
   padding: 0 7px 1px 7px;
   color: var(--mainText);
   border: 2px solid var(--mainText);
@@ -136,7 +156,7 @@ header {
   border: none;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 0;
   padding: 0 12px;
   color: var(--mainText);
   font-size: 3em;
@@ -197,7 +217,7 @@ header {
 
 .btn-arr-top {
   position: fixed;
-  top: 75px;
+  top: 85px;
   right: 20px;
   width: 400px;
   text-align: center;
@@ -210,6 +230,7 @@ header {
   padding: 5px 10px;
   border: none;
   font-weight: bold;
+  box-shadow: 4px 4px 5px #666;
 }
 
 .btn-arr-top button:hover {
@@ -220,7 +241,8 @@ header {
 
 .btn-arr-top button:active {
   opacity: 1;
-  transform: translateY(3px);
+  transform: translateY(2px);
+  box-shadow: 2px 2px 3px #666;
 }
 
 #weather-display {
@@ -789,6 +811,9 @@ footer {
   .header-name {
     font-size: 1.5em;
     padding-top: 25px;
+  }
+  .header-name img {
+    height: 25px;
   }
   .willis .floorplan-thumbs img {
     height: 120px;
