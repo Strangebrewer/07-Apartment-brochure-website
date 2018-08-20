@@ -15,7 +15,7 @@
   --btnBackground: #0a1b2b;
   --btnHover: #0a3155;
   --hoverBorder: #3edb00c5;
-  --border: #3edb00c5;
+  --border: #004585;
 }
 
 html {
@@ -110,12 +110,11 @@ header {
   0 0 4px #fff,
   0 0 5px #fff,
   0 0 10px #fff;
-  /* color: var(--hoverColor); */
 }
 
 .main-nav a:hover {
-  border-top: 2px solid var(--hoverBorder);
-  border-bottom: 2px solid var(--hoverBorder);
+  border-top: 1px solid var(--hoverBorder);
+  border-bottom: 1px solid var(--hoverBorder);
 }
 
 .main-nav a {
@@ -326,8 +325,7 @@ header {
 }
 
 .carousel {
-  /* border: 2px solid var(--mainColor); */
-  border: 2px solid #3edb00c5;
+  border: 2px solid var(--mainColor);
   width: 800px;
   margin: auto;
   padding: 10px;
@@ -539,6 +537,7 @@ form label:first-child {
 input {
   height: 30px;
   vertical-align: middle;
+  box-shadow: inset 1px 1px 1px 2.5px #00000049;
 }
 
 textarea {
@@ -546,21 +545,30 @@ textarea {
   max-width: 100%;
   min-height: 100px;
   padding-top: 10px;
+  box-shadow: inset 1px 1px 1px 2.5px #00000049;
 }
 
 input[type="submit"] {
-  background-color: var(--mainColor);
-  border: none;
-  color: var(--mainText);
-  font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
-  margin-top: 5px;
-  max-width: 80px;
-  padding: 5px 10px 7px 10px;
-  text-align: center;
+  font-family: var(--font-Raleway);
+  border: 1px solid var(--mainColor);
+  padding: 7px 14px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 20px 20px var(--mainColor) inset, 0 0 0 0 var(--mainColor);
+  box-shadow: 0 0 20px 20px var(--mainColor) inset, 0 0 0 0 var(--mainColor);
+  -webkit-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  text-decoration: none;
+  margin: 7px 0 0 10px;
 }
 
 input[type="submit"]:hover {
-  background-color: var(--hoverBkgrd);
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px var(--mainColor) inset, 0 0 5px var(--mainColor);
+  box-shadow: 0 0 5px var(--mainColor) inset, 0 0 5px var(--mainColor);
+  color: var(--mainColor);
 }
 
 .media-links img {
