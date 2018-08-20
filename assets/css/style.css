@@ -14,7 +14,8 @@
   --altBackground: #0059ac5d;
   --btnBackground: #0a1b2b;
   --btnHover: #0a3155;
-  --hoverBorder: #000;
+  --hoverBorder: #3edb00c5;
+  --border: #3edb00c5;
 }
 
 html {
@@ -113,8 +114,8 @@ header {
 }
 
 .main-nav a:hover {
-  border-top: 3px solid var(--hoverBorder);
-  border-bottom: 3px solid var(--hoverBorder);
+  border-top: 2px solid var(--hoverBorder);
+  border-bottom: 2px solid var(--hoverBorder);
 }
 
 .main-nav a {
@@ -325,7 +326,8 @@ header {
 }
 
 .carousel {
-  border: 2px solid var(--mainColor);
+  /* border: 2px solid var(--mainColor); */
+  border: 2px solid #3edb00c5;
   width: 800px;
   margin: auto;
   padding: 10px;
@@ -404,7 +406,7 @@ header {
   width: 80%;
   margin: 5px auto;
   padding: 15px;
-  border: 2px solid var(--mainColor);
+  border: 2px solid var(--border);
 }
 
 .amenities {
@@ -448,7 +450,7 @@ header {
   height: 80px;
   margin: 5px;
   padding: 5px;
-  border: 1px solid var(--mainColor);
+  border: 1px solid var(--border);
 }
 
 .gallery-thumbs a {
